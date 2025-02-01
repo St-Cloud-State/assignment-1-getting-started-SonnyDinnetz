@@ -1,33 +1,33 @@
 <html>
 
 <head>
-    <title>Book Reviews</title>
-
+    <title>ACME Financial Group</title>
 </head>
 
 <body>
-    <h1>Book Reviews</h1>
+    <h1>Special Loan Program</h1>
 	
-	<!-- Add a div to input book data -->
-    <div id="addBook">
-        <h2>Add a Book</h2>
-        <input type="text" id="bookTitle" placeholder="Book Title">
-        <button onclick="addBook()">Add</button>
+    <div id="apply">
+        <input type="text" id="name" placeholder="Name">
+        <input type="text" id="zipcode" placeholder="Zip Code">
+        <button onclick="add_application()">Apply</button>
+    </div>
+
+    <div id="check_status">
+        <input type="text" id="application_number_0" placeholder="application_number">
+        <button onclick="check_status()">Check Status</button>
+    </div>
+
+    <div id="change_status">
+        <input type="text" id="application_number_1" placeholder="application_number">
+        <input type="text" id="new_status" placeholder="new_status">
+        <button onclick="change_status()">Change Status</button>
     </div>
 
 
-	<!-- Display books in this div -->
-    <div id="bookList">
-    <!-- Book data will be displayed here dynamically -->
+    <div id="return">
+    <!-- Return data will be displayed here dynamically -->
     </div>
-
-    <button id="showBooksButton" onclick="showAllBooks()">Show All Books</button>	
-    
-	<!-- Display books in this div -->
-    <div id="allbooks">
-        <!-- Book data will be displayed here dynamically -->
-    </div>
-    
 
     <script src="{{ url_for('static', filename='script.js') }}"></script>
 </body>
