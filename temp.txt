@@ -1,0 +1,16 @@
+Proof of my docker account:
+
+Install Docker:
+sudo apt-get install docker-ce docker-ce-cli containerd.io docker-buildx-plugin docker-compose-plugin
+
+Pull and run:
+sudo docker run hello-world
+
+Build:
+docker build -t sonnydinnetz/image .
+
+Run:
+docker run -d -p 5000:5000 sonnydinnetz/image
+
+Push:
+docker push sonnydinnetz/image:latest
